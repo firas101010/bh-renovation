@@ -1,0 +1,14 @@
+#hero {
+  background: #009688;
+  color: #fff;
+  padding: 2rem 10%;
+  text-align: center;
+}
+
+.section-bg {
+  background: #f4f4f4;
+}
+
+section {
+  padding: 2rem 10%;
+}
