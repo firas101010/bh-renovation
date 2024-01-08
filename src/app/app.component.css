@@ -39,6 +39,7 @@ nav ul li a {
 .logo {
   height: 100px; /* Adjust the size as needed */
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 footer {
