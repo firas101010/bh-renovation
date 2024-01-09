@@ -9,17 +9,17 @@
   line-height: 1.6;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-}
-
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
 }
 
 nav ul {
@@ -48,4 +48,36 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    padding-top: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .logo {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-content {
+    padding: 0 5%;
+  }
+
+  .logo {
+    height: 50px;
+  }
 }
