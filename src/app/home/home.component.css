@@ -1,17 +1,40 @@
-#hero {
-  background: var(--second-color);
-  color: #fff;
+.home-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.background-image-container {
+  background-image: url('/assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive-background {
+    background-image: url('/assets/background-pm.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+
+.white-text {
+  color: var(--second-color);
   padding: 1rem 5%;
   text-align: center;
 }
 
-.section-bg {
-  background: #f4f4f4;
-}
 
 section {
   padding: 2rem 10%;
 }
+
 
 .nav-link {
   text-decoration: none;
@@ -21,6 +44,7 @@ section {
   border: 2px solid transparent;
   border-radius: 5px;
   transition: all 0.3s ease;
+  width: 15%;
 }
 
 .nav-link:hover, .nav-link:focus {
